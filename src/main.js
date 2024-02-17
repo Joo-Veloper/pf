@@ -1,3 +1,5 @@
+'use strict';
+
 //header
 const header = document.querySelector('.header');
 console.log(header);
@@ -47,4 +49,4 @@ navbarToggle.addEventListener('click', () => {
 navbarMenu.addEventListener('click', () => {
     console.log(addEventListener)
     navbarMenu.classList.remove('open');
-})
+});

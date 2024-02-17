@@ -42,3 +42,9 @@ const navbarToggle = document.querySelector('.header__toggle');
 navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('open')
 });
+
+// menu auto closed
+navbarMenu.addEventListener('click', () => {
+    console.log(addEventListener)
+    navbarMenu.classList.remove('open');
+})

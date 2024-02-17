@@ -2,13 +2,13 @@
 
 //header
 const header = document.querySelector('.header');
-console.log(header);
+// console.log(header);
 
 const headerHeight = header.offsetHeight;
-console.log(headerHeight);
+// console.log(headerHeight);
 
 document.addEventListener('scroll', () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if(window.scrollY>headerHeight) {
         header.classList.add('header--dark');
     }else{
@@ -18,13 +18,13 @@ document.addEventListener('scroll', () => {
 
 // home
 const home = document.querySelector('.home__container')
-console.log(home);
+// console.log(home);
 
 const homeHeight = home.offsetHeight;
-console.log(homeHeight);
+// console.log(homeHeight);
 
 document.addEventListener('scroll', ()=>{
-    console.log(1 - window.scrollY / homeHeight)
+    // console.log(1 - window.scrollY / homeHeight)
     home.style.opacity = 1 - window.scrollY / homeHeight; 
 });
 
@@ -47,6 +47,6 @@ navbarToggle.addEventListener('click', () => {
 
 // menu auto closed
 navbarMenu.addEventListener('click', () => {
-    console.log(addEventListener)
+    // console.log(addEventListener)
     navbarMenu.classList.remove('open');
 });

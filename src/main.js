@@ -24,4 +24,14 @@ console.log(homeHeight);
 document.addEventListener('scroll', ()=>{
     console.log(1 - window.scrollY / homeHeight)
     home.style.opacity = 1 - window.scrollY / homeHeight; 
-})
+});
+
+// Arrow Up
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY > homeHeight / 2) {
+        arrowUp.style.opacity = 1;
+    } else{
+        arrowUp.style.opacity = 0;
+    }
+});

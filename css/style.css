@@ -143,11 +143,34 @@ button:focus {
 }
 /* Home */
 #home {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
   text-align: center;
+}
+
+.home__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.home__divider svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 61px;
+  transform: rotateY(180deg);
+}
+
+.home__divider .shape-fill {
+  fill: #FFFFFF;
 }
 
 .home__avatar {
@@ -203,6 +226,8 @@ button:focus {
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  width: 337px;
+  height: 252px;
 }
 
 .major__icon {
@@ -244,8 +269,31 @@ button:focus {
 
 /* Skils */
 #skills {
+  position: relative;
   background-color: var(--color-primary-variant);
   color: var(--color-text);
+}
+
+.skils__devider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.skils__devider svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 52px;
+  transform: rotateY(180deg);
+}
+
+.skils__devider .shape-fill {
+  fill: var(--color-primary);
 }
 
 .skills {
@@ -410,7 +458,7 @@ button:focus {
 
 /* Testimonial */
 .testimonial {
-  margin: 3rem;
+  margin: 0;
 }
 
 .testimonial {
@@ -421,7 +469,8 @@ button:focus {
 }
 
 .testimonial:nth-child(even) .testimonial__img {
-  order: 1;
+  /* 수정 */
+  order: 0;
 }
 
 .testimonial__img {
@@ -458,8 +507,29 @@ button:focus {
 }
 /* Footer */
 #contact {
+  position: relative;
   background-color: var(--color-primary);
   color: var(--color-text);
+}
+
+.contact__divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.contact__divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.contact__divider .shape-fill {
+  fill: #FFFFFF;
 }
 
 .contact__links {
